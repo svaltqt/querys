@@ -23,8 +23,8 @@ $(document).ready(function()
                 //obtener apellidos               
                 var apellidos = $("#apellidos").val();                
                 
-                //obtener valor dle select
-                $("#SubjectsList option:selected").text();
+                //obtener valor del select
+                var tipo_Correo = $("#SubjectsList option:selected").text();
                 
                 //obtener campo date   
                 var date = new Date($('#bday').val());
@@ -36,7 +36,21 @@ $(document).ready(function()
                 // calcular edad
                 var today = new Date();
                 var age = Math.floor((today-date) / (365.25 * 24 * 60 * 60 * 1000));
-                alert(age)
+                
+                // Crear nombre 
+                var Fullname = nombre + " " + apellidos;
+
+                // calcular primera letra del nombre
+                var letra =nombre.substr(0,1);
+                var correo = letra+apellidos+year+"@"+tipo_Correo;
+                
+                // Mostrar datos en html
+                var add = "<tr>"
+                add+="<td>" + Fullname + "</td>"
+                add+="<td>" + age + "</td>"
+                add+="<td>"+correo+"</td>"
+                add+="<tr>"
+                           
 
                 $("table").append(add);
             });
