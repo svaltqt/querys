@@ -19,15 +19,19 @@
         <form>
             <div class="form-row">
               <div class="col mb-2">
+                <center>Nombre</center> 
                 <input type="text" id="nombre" name="nombres" class="form-control" placeholder="Nombre">
               </div>
               <div class="col mb-2">
-                <input type="text" id="apellidos" class="form-control" placeholder="Apellidos">
+                <center>Apelido</center> 
+                <input type="text" id="apellidos" class="form-control" placeholder="primer apellido">
               </div>
               <div class="col mb-2">
+                <center>Fecha nacimiento</center> 
                 <input type="date" id="bday" class="form-control">
               </div>
-              <div class="col mb-2">
+              <center>Servicio de correo</center> 
+              <div class="row">
                     <select id="SubjectsList" class="form-select form-select-lg mb-2" aria-label="Default select example">
                     <option value="hot">Hotmail</option>
                     <option value="gma">Gmail</option>
@@ -57,12 +61,3 @@
 </html>
 
 
-<!--
-    Nombre: Input tipo Texto que reciba sólo letras.
-Apellidos: Input tipo Texto que reciba sólo letras.
-Fecha de Nacimiento: control tipo Date.
-Servicio Correo electrónico: Control tipo Select con dos opciones: Gmail y Hotmail
-Correo Electrónico: Formar el nombre de usuario según el siguiente formato: inicial del nombre + apellido(sin espacio) + año de nacimiento
-Botón <Insertar>
-Crear una tabla con los siguientes encabezados: Nombre Completo | Edad | Correo Electrónico
--->
