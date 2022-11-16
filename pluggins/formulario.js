@@ -15,7 +15,8 @@ Crear una tabla con los siguientes encabezados: Nombre Completo | Edad | Correo 
 **/
 
 $(document).ready(function()
-        {
+        { 
+            
             $("#agregar").click(function()
             {   // Obtener nombre
                 var nombre= $("#nombre").val(); 

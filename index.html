@@ -16,19 +16,19 @@
             <h2>Semiotica</h2></center>
 
     <div class="container">
-        <form>
+        <form id="formulario">
             <div class="form-row">
               <div class="col mb-2">
                 <center>Nombre</center> 
-                <input type="text" id="nombre" name="nombres" class="form-control" placeholder="Nombre">
+                <input type="text" id="nombre" name="name" class="form-control" placeholder="Nombre">
               </div>
               <div class="col mb-2">
                 <center>Apelido</center> 
-                <input type="text" id="apellidos" class="form-control" placeholder="primer apellido">
+                <input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="primer apellido">
               </div>
               <div class="col mb-2">
                 <center>Fecha nacimiento</center> 
-                <input type="date" id="bday" class="form-control">
+                <input type="date" id="bday" name="bday" class="form-control">
               </div>
               <center>Servicio de correo</center> 
               <div class="row">
@@ -41,9 +41,18 @@
             </div>
             <button type="button" class="btn btn-primary" id="agregar">insertar</button>
           </form> 
-          <table class="table" border="1">
-
+          <table>
+            <thead>
+                <tr>
+                  <th scope="col"><center>Nombre</center></th>
+                  <th scope="col"><Center>Edad</Center></th>
+                  <th scope="col"><center>Correo</center></th>
+                </tr>
+              </thead>
+            <tbody class="table" border="1">
+            </tbody>
           </table>
+          
 
     </div>
 
