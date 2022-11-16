@@ -42,7 +42,7 @@ $(document).ready(function()
 
                 // calcular primera letra del nombre
                 var letra =nombre.substr(0,1);
-                var correo = letra+apellidos+year+"@"+tipo_Correo;
+                var correo = (letra+apellidos+year+"@"+tipo_Correo+".com").toLowerCase();
                 
                 // Mostrar datos en html
                 var add = "<tr>"
